@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="MapData" load_steps=2 format=3 uid="uid://eov648rryx5m"]
+
+[ext_resource type="Script" uid="uid://c1a3vyf30jrw8" path="res://map_data.gd" id="1_g5ko2"]
+
+[resource]
+script = ExtResource("1_g5ko2")
+name = ""
+editor_display_name = ""
+percentage = 0.0
+metadata/_custom_type_script = "uid://c1a3vyf30jrw8"

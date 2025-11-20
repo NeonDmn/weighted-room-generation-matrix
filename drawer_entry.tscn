@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://duvh3suw0rqlu"]
+
+[ext_resource type="Script" uid="uid://dlfswc5lwfepl" path="res://drawer_entry.gd" id="1_j50mo"]
+
+[node name="Entry" type="PanelContainer"]
+custom_minimum_size = Vector2(50, 50)
+script = ExtResource("1_j50mo")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Label" type="Label" parent="MarginContainer"]
+layout_mode = 2
+text = "Map display name"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
